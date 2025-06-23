@@ -5,20 +5,11 @@ Create directories
 
 	$ mkdir lineage-17.1
 	$ cd lineage-17.1
+ 
+.repo/local_manifests/
 
-Init the base manifest
 
-**For some reason, we need to use older manifest for now**
-
-	$ repo init -u git://github.com/wecouldcalliteven/android.git -b lineage-17.1
-  
-Add the local manifest
-
-  Take the xml file for your device and copy it to .repo/local_manifests/
-
-Then sync up with this command:
-
-	$ repo sync --force-sync -q
+	$ repo sync --force-sync -q -c
 
 -------------
  
